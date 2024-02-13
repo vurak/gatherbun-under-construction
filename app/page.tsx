@@ -1,6 +1,15 @@
 import Curtains from "@/components/curtains"
 import { Suspense } from "react"
 
+const messages = [
+  "good things take time",
+  "watch this space",
+  "under construction",
+  "gather your buns",
+  "in development",
+  "coming soon\u2122",
+]
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between bg-white text-action">
@@ -10,7 +19,7 @@ export default function Home() {
       <div className="max-w-5xl w-full items-center justify-between text-sm my-auto p-12 md:p-24">
         <Logo />
         <h3 className="text-xl sm:text-3xl md:text-3xl lg:text-5xl font-bold text-center">
-          good things take time
+          {messages.at(Math.floor(Math.random() * messages.length))}
         </h3>
       </div>
     </main>
