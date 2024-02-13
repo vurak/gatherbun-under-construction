@@ -1,4 +1,5 @@
 "use client"
+
 const messages = [
   "good things take time",
   "watch this space",
@@ -13,7 +14,7 @@ export default function DynamicMessage() {
   return (
     <h3
       className="text-xl sm:text-3xl md:text-3xl lg:text-5xl font-bold text-center"
-      suppressHydrationWarning
+      // suppressHydrationWarning
     >
       {message}
     </h3>
