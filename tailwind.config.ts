@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -8,13 +8,66 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      // PURPLE
+      colors: {
+        pri: "#FFFFFF",
+        sec: "#DBB2E8",
+        text: "#0d1216",
+        accent: "#781FFF",
+        action: "#B426E3",
+      },
+      animation: {
+        wiggle: "wiggle 3s ease infinite alternate forwards",
+      },
+      keyframes: {
+        wiggle: {
+          "0%": {
+            transform: "translate(0)",
+          },
+
+          "10%": {
+            transform: "translate(-2px, -2px)",
+          },
+
+          "20%": {
+            transform: "translate(2px, -2px)",
+          },
+
+          "30%": {
+            transform: "translate(-2px, 2px)",
+          },
+
+          "40%": {
+            transform: "translate(2px, 2px)",
+          },
+
+          "50%": {
+            transform: "translate(-2px, -2px)",
+          },
+
+          "60%": {
+            transform: "translate(2px, -2px)",
+          },
+
+          "70%": {
+            transform: "translate(-2px, 2px)",
+          },
+
+          "80%": {
+            transform: "translate(-2px, -2px)",
+          },
+
+          "90%": {
+            transform: "translate(2px, -2px)",
+          },
+
+          "100%": {
+            transform: "translate(0)",
+          },
+        },
       },
     },
   },
   plugins: [],
-};
-export default config;
+}
+export default config

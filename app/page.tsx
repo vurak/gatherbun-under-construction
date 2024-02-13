@@ -1,113 +1,120 @@
-import Image from "next/image";
+import Curtains from "@/components/curtains"
+import { Suspense } from "react"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    <main className="flex min-h-screen flex-col items-center justify-between bg-white text-action">
+      <Suspense fallback={<CurtainsStatic />}>
+        <Curtains />
+      </Suspense>
+      <div className="max-w-5xl w-full items-center justify-between text-sm my-auto p-12 md:p-24">
+        <Logo />
+        <h3 className="text-xl sm:text-3xl md:text-3xl lg:text-5xl font-bold text-center">
+          good things take time
+        </h3>
       </div>
     </main>
-  );
+  )
+}
+
+const Logo = () => (
+  <svg
+    className="relative scale-100 w-full h-full"
+    version="1.0"
+    xmlns="http://www.w3.org/2000/svg"
+    // width="1186"
+    // height="306"
+    viewBox="0 0 1186 306"
+    preserveAspectRatio="xMidYMid meet"
+  >
+    <g
+      transform="translate(0.000000,306.000000) scale(0.100000,-0.100000)"
+      fill="#B426E3"
+      stroke="none"
+    >
+      <path
+        d="M4050 1825 l0 -1065 190 0 190 0 0 284 c0 156 4 305 9 332 25 128 91
+233 173 275 102 52 212 26 256 -61 22 -44 22 -50 22 -437 l0 -393 185 0 185 0
+0 475 c0 461 -1 476 -21 532 -44 115 -167 206 -299 221 -87 10 -204 -2 -273
+-28 -73 -27 -154 -88 -203 -152 l-39 -52 -3 567 -2 567 -185 0 -185 0 0 -1065z"
+      />
+      <path
+        d="M7580 1825 l0 -1065 190 0 190 0 0 55 c0 30 3 55 6 55 3 0 20 -12 38
+-27 50 -42 161 -90 239 -103 302 -51 593 120 686 404 43 128 45 337 5 461 -69
+212 -243 359 -456 387 -157 20 -343 -20 -471 -102 -26 -16 -50 -30 -52 -30 -3
+0 -5 232 -5 515 l0 515 -185 0 -185 0 0 -1065z m828 -155 c115 -58 176 -161
+177 -295 0 -71 -4 -88 -33 -147 -57 -117 -160 -182 -286 -181 -118 2 -205 41
+-271 124 l-35 44 0 155 c1 103 5 162 13 176 59 101 159 153 293 154 70 0 89
+-4 142 -30z"
+      />
+      <path
+        d="M3328 2203 l-3 -258 -92 -3 -93 -3 0 -144 0 -145 95 0 95 0 0 -445 0
+-445 185 0 185 0 0 445 0 445 145 0 145 0 0 145 0 145 -145 0 -145 0 0 260 0
+260 -185 0 -185 0 -2 -257z"
+      />
+      <path
+        d="M745 1994 c-251 -36 -464 -237 -521 -490 -12 -58 -15 -103 -11 -183
+9 -181 66 -310 187 -424 127 -121 270 -173 445 -164 156 8 260 52 348 146 l47
+50 0 -102 c0 -128 -11 -168 -62 -223 -77 -84 -223 -128 -354 -106 -80 13 -128
+36 -217 103 -38 29 -72 48 -77 43 -4 -5 -53 -63 -109 -128 l-101 -119 85 -63
+c170 -125 277 -158 505 -158 170 0 214 8 346 69 173 79 297 217 340 379 11 40
+14 183 14 684 l0 632 -169 0 -169 0 -13 -37 c-17 -56 -18 -56 -51 -28 -43 36
+-137 83 -204 100 -59 15 -208 26 -259 19z m337 -338 c61 -29 109 -71 140 -121
+15 -26 18 -52 18 -181 l0 -152 -44 -49 c-57 -63 -124 -99 -211 -113 -84 -14
+-142 -7 -211 25 -177 80 -244 305 -141 476 34 56 102 112 165 136 25 9 69 12
+132 10 79 -3 105 -8 152 -31z"
+      />
+      <path
+        d="M2170 1989 c-91 -15 -215 -82 -291 -158 -109 -109 -159 -217 -179
+-385 -13 -108 -7 -204 17 -306 60 -250 275 -409 553 -410 131 0 239 39 345
+125 l55 45 0 -70 0 -70 190 0 190 0 0 590 0 590 -174 0 -175 0 -12 -59 -11
+-60 -59 49 c-85 70 -137 99 -215 115 -76 16 -150 17 -234 4z m345 -328 c73
+-36 95 -54 129 -105 25 -38 26 -44 26 -193 0 -171 -3 -184 -67 -245 -89 -86
+-234 -109 -345 -55 -182 89 -243 325 -129 498 32 48 96 99 146 117 17 6 64 11
+105 11 64 1 84 -3 135 -28z"
+      />
+      <path
+        d="M5950 1989 c-278 -23 -509 -206 -586 -464 -24 -80 -24 -256 -1 -344
+45 -169 147 -299 291 -370 171 -85 399 -103 575 -45 72 24 181 76 181 86 0 10
+-149 268 -155 268 -1 0 -34 -15 -71 -32 -125 -59 -275 -48 -359 26 -22 19 -38
+36 -35 38 3 3 195 65 428 138 486 155 441 124 392 273 -103 306 -330 453 -660
+426z m148 -305 c47 -19 88 -58 113 -106 10 -21 19 -39 19 -42 0 -2 -111 -41
+-247 -87 -137 -45 -254 -84 -260 -87 -18 -6 -17 68 3 137 36 130 128 201 261
+201 44 0 89 -6 111 -16z"
+      />
+      <path
+        d="M7454 1986 c-124 -39 -311 -182 -359 -275 -8 -17 -19 -31 -24 -31 -4
+0 -14 59 -21 130 l-12 130 -169 0 -169 0 0 -590 0 -590 185 0 185 0 0 248 c0
+268 6 316 56 414 34 66 115 145 181 175 31 14 81 26 121 30 l69 6 7 135 c8
+176 8 232 -1 231 -5 0 -27 -6 -49 -13z"
+      />
+      <path
+        d="M11140 1988 c-141 -13 -269 -83 -342 -188 l-36 -51 -6 28 c-3 15 -8
+51 -11 78 -12 93 5 85 -186 85 l-169 0 0 -590 0 -590 190 0 190 0 0 284 c0
+156 4 305 9 332 16 84 50 160 93 208 56 64 108 90 183 90 77 1 122 -24 153
+-84 22 -44 22 -50 22 -437 l0 -393 185 0 185 0 0 475 c0 461 -1 476 -21 532
+-59 157 -225 241 -439 221z"
+      />
+      <path
+        d="M9040 1503 c0 -241 4 -464 10 -497 29 -179 178 -297 374 -297 173 1
+318 70 401 193 37 56 39 54 50 -47 11 -104 -6 -95 186 -95 l169 0 0 590 0 590
+-190 0 -190 0 0 -284 c0 -156 -4 -305 -9 -332 -15 -76 -49 -160 -85 -207 -90
+-119 -260 -127 -315 -15 -20 43 -21 56 -21 441 l0 397 -190 0 -190 0 0 -437z"
+      />
+      <path
+        d="M1745 425 c-52 -80 -95 -148 -95 -150 0 -3 2234 -5 4965 -5 l4965 0
+0 150 0 150 -4870 0 -4870 0 -95 -145z"
+      />
+    </g>
+  </svg>
+)
+
+const CurtainsStatic = () => {
+  return (
+    <div className="z-20 fixed w-full h-full">
+      <div className="absolute h-full w-1/2 left-0 bg-red-200"></div>
+      <div className="absolute h-full w-1/2 right-0 bg-accent"></div>
+      {/* <button className="rounded-full w-40 h-40"></button> */}
+    </div>
+  )
 }
