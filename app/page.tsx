@@ -121,8 +121,8 @@ c170 -125 277 -158 505 -158 170 0 214 8 346 69 173 79 297 217 340 379 11 40
 const CurtainsStatic = () => {
   return (
     <div className="z-20 fixed w-full h-full">
-      <div className="absolute h-full w-1/2 left-0 bg-red-200"></div>
-      <div className="absolute h-full w-1/2 right-0 bg-accent"></div>
+      <div className="absolute h-full w-1/2 left-0 bg-action"></div>
+      <div className="absolute h-full w-1/2 right-0 bg-action"></div>
       {/* <button className="rounded-full w-40 h-40"></button> */}
     </div>
   )
