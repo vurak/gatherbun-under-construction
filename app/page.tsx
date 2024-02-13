@@ -1,26 +1,16 @@
 import Curtains from "@/components/curtains"
+import DynamicMessage from "@/components/dynamic-message"
 import { Suspense } from "react"
-
-const messages = [
-  "good things take time",
-  "watch this space",
-  "under construction",
-  "gather your buns",
-  "in development",
-  "coming soon\u2122",
-]
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between bg-white text-action">
+    <main className="flex h-screen flex-col items-center justify-between bg-white text-action">
       <Suspense fallback={<CurtainsStatic />}>
         <Curtains />
       </Suspense>
-      <div className="max-w-5xl w-full items-center justify-between text-sm my-auto p-12 md:p-24">
+      <div className="flex flex-col max-w-5xl w-full items-center justify-between text-sm my-auto p-12 md:p-24">
         <Logo />
-        <h3 className="text-xl sm:text-3xl md:text-3xl lg:text-5xl font-bold text-center">
-          {messages.at(Math.floor(Math.random() * messages.length))}
-        </h3>
+        <DynamicMessage />
       </div>
     </main>
   )

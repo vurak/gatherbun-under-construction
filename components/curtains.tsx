@@ -20,7 +20,7 @@ export default function Curtains() {
   }, [])
 
   return (
-    <div className="z-20 fixed w-full h-full">
+    <div className="z-20 fixed w-full h-screen">
       <div
         className={clsx(
           "absolute h-full w-1/2 left-0 bg-action transition-transform  delay-500 duration-[2000ms]",
