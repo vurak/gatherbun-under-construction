@@ -14,7 +14,7 @@ const config: Config = {
         sec: "#DBB2E8",
         text: "#0d1216",
         accent: "#781FFF",
-        action: "#B426E3",
+        action: "#9362e3",
       },
       animation: {
         wiggle: "wiggle 3s ease infinite alternate forwards",

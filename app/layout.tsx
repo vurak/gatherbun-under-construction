@@ -5,7 +5,7 @@ import "./globals.css"
 const inter = Work_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Gatherbun",
+  title: "gatherbun",
   description: "The future of event invitations",
 }
 
