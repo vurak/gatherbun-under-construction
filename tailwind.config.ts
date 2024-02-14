@@ -17,12 +17,12 @@ const config: Config = {
         action: "#9362e3",
       },
       animation: {
-        wiggle: "wiggle 3s ease infinite alternate forwards",
+        wiggle: "wiggle 3s ease-in-out infinite alternate forwards",
       },
       keyframes: {
         wiggle: {
           "0%": {
-            transform: "translate(0)",
+            transform: "translate(0) scale(1)",
           },
 
           "10%": {
@@ -42,7 +42,7 @@ const config: Config = {
           },
 
           "50%": {
-            transform: "translate(-2px, -2px)",
+            transform: "translate(-2px, -2px) scale(1.3)",
           },
 
           "60%": {
@@ -62,7 +62,7 @@ const config: Config = {
           },
 
           "100%": {
-            transform: "translate(0)",
+            transform: "translate(0) scale(1)",
           },
         },
       },
