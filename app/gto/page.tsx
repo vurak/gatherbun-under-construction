@@ -160,15 +160,16 @@ export default function Template() {
             {`To George Tiger Old
 By royal order of
 KING GRIMLAD The FIRST
+14th February 2024
 
-14th February 2024`}
-            <span className="w-16 my-9 h-0.5 bg-[#402f2f] rounded-lg mx-auto"></span>
+`}
+            {/* <span className="w-16 my-9 h-0.5 bg-[#402f2f] rounded-lg mx-auto"></span> */}
             {`His Majesty King Grimlad the First, ruler of Aglia and saviour of the Isles, wishes this letter to lay on the hands of George Tiger Old.
             
             Anyone who interfieres with the delivery will be punished with the maximum sentence and thereby executed by hanging at Ceredils Main Square. `}
           </div>
         </div>
-        <div className="absolute bottom-2 text-3xl leading-none font-bold text-ink w-full text-center flex justify-center flex-col items-center">
+        <div className="absolute bottom-9 text-3xl leading-none font-bold text-ink w-full text-center flex justify-center flex-col items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="40"
@@ -194,7 +195,7 @@ In recognition of your bravery and dedication, I am delighted to bestow upon you
 
 May this present serve as a testament to your unwavering loyalty to your king and the glory Aglia. `}
             </p>
-            <p className="py-5 text-[27px] leading-none whitespace-pre-line text-right">
+            <p className="py-5 pb-12 text-[27px] leading-none whitespace-pre-line text-right">
               {`King Grimlad the First
               Ruler of Aglia and Saviour of the Isles`}
             </p>
