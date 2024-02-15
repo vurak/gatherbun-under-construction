@@ -13,11 +13,7 @@ const Nightshade = Jim_Nightshade({ subsets: ["latin"], weight: ["400"] })
 const estonia = Estonia({ subsets: ["latin"], weight: ["400"] })
 const COUNT = 28
 
-type Content = {
-  text: string
-}
-
-export default function Template({ content }: { content: Content }) {
+export default function Template() {
   const [locked, setLocked] = useState(true)
   const [locks, setLocks] = useState(new Array(COUNT).fill(1))
   const [password, setPassword] = useState("")
