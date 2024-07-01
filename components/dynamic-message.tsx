@@ -1,10 +1,7 @@
 "use client"
 
 const messages = [
-  "good things take time",
-  "watch this space",
   "under construction",
-  "gather your buns",
   "in development",
   "coming soon",
 ]
