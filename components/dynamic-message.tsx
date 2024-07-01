@@ -6,7 +6,7 @@ const messages = [
   "under construction",
   "gather your buns",
   "in development",
-  "coming soon\u2122",
+  "coming soon",
 ]
 
 export default function DynamicMessage() {
